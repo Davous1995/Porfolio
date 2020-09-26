@@ -25,16 +25,17 @@ header {
     width: 20%;
   }
 header img {
-      width: 20%;
+      width: 70%;
 }
 
 /*style rules for nav area*/
 #nav {
-  position: absolute;
-  top: 0px;
+clear:left;
+top: 0px;
   float: right;
-  margin: 5em 3em 0 0;
+  margin: 1.25em 1.5em 0 0;
   width: 80%;
+
 }
 
 #nav ul {
@@ -63,19 +64,29 @@ header img {
   clear: right;
   text-align: center;
   font-size: 1.35em;
-  position: relative;
-  bottom: 0px;
+
 }
 
 
 /* style rules for main */
+#introduction img{
+            clear: left;
+            float:right;
+            width: 30%
+
+}
 main {
-  clear: left;
+  clear: right;
   background-color: #ADD8E6;
   padding: 2%;
   font-size: 1.25em;
   font: #000;
 }
+
+#introduction p{
+    word-wrap: left;
+}
+
 
 
 .action {
