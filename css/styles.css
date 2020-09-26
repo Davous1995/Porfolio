@@ -1,0 +1,178 @@
+/*
+    Author: David De Alva
+    Date: 09/26/2020
+    File name: porfolio/css/styles.css
+    */
+    /*css reset*/
+body, header, nav, main, footer, h1, div, img{
+          margin: 0;
+          padding: 0;
+          border: 0;
+}
+/*styles rule for body and img*/
+body {
+            background-color: #5F9EA0;
+          }
+
+img {
+              max-width: 100%;
+              display: block;
+  }
+
+
+header {
+    float: left;
+    width: 20%;
+  }
+header img {
+      width: 20%;
+}
+
+/*style rules for nav area*/
+#nav {
+  position: absolute;
+  top: 0px;
+  float: right;
+  margin: 5em 3em 0 0;
+  width: 80%;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+
+}
+#nav li{
+    display: inline-block;
+    font-size: .9em;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    content: #5F9EA0
+}
+
+#nav li a{
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+#mission p{
+  clear: right;
+  text-align: center;
+  font-size: 1.35em;
+  position: relative;
+  bottom: 0px;
+}
+
+
+/* style rules for main */
+main {
+  clear: left;
+  background-color: #ADD8E6;
+  padding: 2%;
+  font-size: 1.25em;
+  font: #000;
+}
+
+
+.action {
+            font-size: 1.35em;
+            color: #666600;
+            font-weight: bold;
+}
+/* Style rules for homr page attributes */
+.home_image {
+  width: 20%;
+  float: left;
+  margin: 0 2%;
+  border: 4px solid #000;
+
+}
+
+#intro {
+              clear: left;
+              float: right;
+              font-family:   georgia, times, sans-serif;
+}
+
+#intro h3 {
+                  font-weight: bold;
+                  font-size: 1.5em;
+          }
+
+
+
+#hobbies {
+                clear: right;
+                  border-top: 1px solid #000;
+                  border-bottom: 1px solid #000;
+                  padding: 1% 2%;
+}
+
+
+#hobbies ul{
+                      font-weight: bold;
+}
+
+#hobbies li{
+                      padding: 0.5% 3% 2% 0;
+}
+
+
+/*style rules for external links and contact info*/
+.external_link {
+                        color: #00e6a3;
+                        font-weight: bold;
+                        text-decoration: none;
+}
+
+#contact {
+                text-align: center;
+}
+
+#contact a {
+                  color: #666600;
+                  text-decoration: none;
+}
+.map {
+            border: 8px solid #000;
+}
+
+#sport_list img{
+              float: left;
+              width: 3%;
+              height: 3%;
+
+}
+
+#sports_list dt{
+                      font-weight: bold;
+}
+
+#sports_list dd{
+                      padding: 0.5% 5% 2% 0;
+                      margin-left: 550px
+}
+/*style rules for footer*/
+footer p {
+              font-size: 0.75em;
+              text-align: center;
+              color: #fff;
+              padding: 0 1em;
+}
+
+footer p a{
+                color: #fff;
+                text-decoration: none;
+}
+
+#container{
+  width: 80%;
+  margin: 0 auto;
+}
+.map {
+            border: 8px solid #000;
+}
