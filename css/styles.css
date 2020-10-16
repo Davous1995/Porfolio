@@ -4,61 +4,159 @@
     File name: porfolio/css/styles.css
     */
     /*css reset*/
-body, header, nav, main, footer, h1, div, img{
-          margin: 0;
-          padding: 0;
-          border: 0;
-}
+
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+    body {
+        line-height:1;
+    }
+
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section {
+        display:block;
+    }
+
+    nav ul {
+        list-style:none;
+    }
+
+    blockquote, q {
+        quotes:none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content:'';
+        content:none;
+    }
+
+    a {
+        margin:0;
+        padding:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+    /* change colours to suit your needs */
+    ins {
+        background-color:#ff9;
+        color:#000;
+        text-decoration:none;
+    }
+
+    /* change colours to suit your needs */
+    mark {
+        background-color:#ff9;
+        color:#000;
+        font-style:italic;
+        font-weight:bold;
+    }
+
+    del {
+        text-decoration: line-through;
+    }
+
+    abbr[title], dfn[title] {
+        border-bottom:1px dotted;
+        cursor:help;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+
+    /* change border color to suit your needs */
+    hr {
+        display:block;
+        height:1px;
+        border:0;
+        border-top:1px solid #cccccc;
+        margin:1em 0;
+        padding:0;
+    }
+
+    input, select {
+        vertical-align:middle;
+    }
+
+    img {
+                  max-width: 100%;
+                  display: block;
+      }
 /*styles rule for body and img*/
 body {
             background-color: #5F9EA0;
           }
 
-img {
-              max-width: 100%;
-              display: block;
-  }
+          /*style rules for mobile viewport*/
+          header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-image: radial-gradient(#5F9EA0,#00f7f2);
+            height: 190px;
+          }
+
+          header img {
+                margin: 5px  auto 0;
+                width: 18%;
+          }
 
 
-header {
-    float: left;
-    width: 20%;
-  }
-header img {
-      width: 70%;
-}
+          /*style rules for nav area*/
+          nav {
+                padding: 1%;
+                margin-bottom: 1%;
 
-/*style rules for nav area*/
-#nav {
-clear:left;
-top: 0px;
-  float: right;
-  margin: 1.25em 1.5em 0 0;
-  width: 80%;
+          }
 
-}
+          nav ul {
+              list-style-type: none;
+              text-align: center;
 
-#nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: right;
+          }
+          nav li{
+              font-size: 1.25em;
+              border-top: 1px solid #fff;
+              font-family: 'Roboto Condensed', sans-serif;
+          }
 
-}
-#nav li{
-    display: inline-block;
-    font-size: .9em;
-    font-family: verdana, arial, sans-serif;
-    font-weight: bold;
-    content: #5F9EA0
-}
+          nav li:first-child{
+            border-top: none;
+          }
 
-#nav li a{
-  display: block;
-  color: #000;
-  text-align: center;
-  padding: 0.5em 1em;
-  text-decoration: none;
-}
+          nav li a{
+            display: block;
+            color: #fff;
+            padding: 0.5em 1em;
+            text-decoration: none;
+          }
+
+          /*Show mobile class, hide desktop class*/
+
+          .mobile {
+            display: block;
+          }
+
+          .tablet-desktop {
+            display: none;
+          }
 
 #mission p{
   clear: right;
@@ -70,7 +168,7 @@ top: 0px;
 
 /* style rules for main */
 #introduction img{
-            clear: left;
+            border-radius: 6px;
             float:right;
             width: 30%
 
@@ -81,6 +179,7 @@ main {
   padding: 2%;
   font-size: 1.25em;
   font: #000;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #introduction p{
@@ -126,10 +225,12 @@ main {
 
 #hobbies ul{
                       font-weight: bold;
+                      list-style-type: none;
 }
 
 #hobbies li{
                       padding: 0.5% 3% 2% 0;
+
 }
 
 
