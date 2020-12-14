@@ -5,64 +5,120 @@
       -->
 <html lang= "en">
 <head>
-        <title>  My Porfolio  </title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
-          <link rel=stylesheet href = css/styles.css>
         <meta charset = "utf-8">
-          <meta name=“viewport” content="width =device-width, initial-scale=1" >
+        <title>  My Porfolio  </title>
+          <meta name=“viewport” content="width=device-width, initial-scale=1.0" >
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel=stylesheet href = css/styles.css>
+        <scripts src="scripts/script.js"></scripts>
 </head>
 
 <body>
-      <header>
-        <!-- Use this area for the website name or logo-->
-            <h1 class = tablet-desktop> David De Alva</h1>
-            <a href="index.html"> <img src = images/me_avatar.jpg alt = "personal avatar"> </a>
-        </header>
+  <header id = "porfolio-logo">
+        <a href="index.html" class= "header-brand"> David De Alva</a>
+        <!--Tablet, Desktop Nav -->
+        <nav class = "large-screen-nav">
+          <ul>
+                    <li><a href="RDP.html">RDP</a></li>
+                    <li><a href="WaB.html">W&B</a></li>
+                   <li><a href = "Awards.html">About Me</a> </li>
+                    <li><a href="References.html"> References </a> </li>
+                    <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <a href ="cases.html" class = "header-cases">Cases</a>
+        </nav>
+      </header>
+        <!-- Mobile Nav -->
+      <!--  <nav class = "mobile-nav">
+          <div id = "menu-links" >
+                    <a href="RDP.html">RDP</a>
+                    <a href="WaB.html">W&B</a>
+                     <a href = "Awards.html">About Me</a>
+                    <a href="References.html"> References </a>
+                    <a href="contact.html">Contact</a>
+              </div>
+              <a class="menu-icon" onclick = "hamburger()">
+                    <div> &#9776;</div>
+        </nav>-->
 
-          <div id=mission class = tablet-desktop>   <p>Mission: To live a life of personal freedom enjoying my family, my business, and my time on this beautiful earth. </p> </div>
+        <main>
 
-
-            <nav>
-              <ul>
-                        <li><a href="index.html"> Home</a></li>
-                        <li><a href="RDP.html">  Red Door Properties</a></li>
-                        <li><a href="WaB.html">Wake&Bake Diner</a></li>
-                       <li><a href = "Awards.html">Awards &amp; Certifications</a> </li>
-                        <li><a href="References.html"> References </a> </li>
-                        <li><a href="contact.html">  Contact me</a></li>
-                  </ul>
-            </nav>
-
-            <main>
-                <!-- Use this area to add the main content of the webpage -->
-                <div  id = introduction>
-                  <img src= images/My_family.jpg>
-                  <br>
-                <p> In 2015 I joined the Air force, a month later I shipped out and a few months after that I moved to place, I now call home. It was not the first time in my life
-                  that I relocated permanently but this time it felt different. I felt I had a purpose. 5 years later and I am still here in Fairfield, California. Born and raised in Mexico and then moving on to Pennsylvania has given me
-                  the opportunity to meet a lot of different people. I intend to continue my tradition of moving on around every 8 years and live in North Carolina in a few years. I have a wife and kid, who mean the world to me,
-                  and I love exploring the world around us with them. In order to make a living I plan on doing a few things, first is to get my B.S in Business admin and then receive a masters after that. During my masters, hopefully
-                  in N.C, I want to start a Real Estate investments company and then move one to bigger and better things. <p>
-                    <br>
-                    <div id = hobbies>
-                    <h3> Hobies: </h3>
-                  <ul>
-                        <li>Spending time with family </li>
-                        <li> Wood Working </li>
-                        <li> Video Games </li>
-                        <li> Learning Programming </li>
-                        <li> Hiking </li>
-                        <li> Fishing </li>
-                    </ul>
-                  </div>
-                  </div>
+              <section class="index-banner">
+                <div class = "vertical-center">
+                <h2> My Mission: </h2>
+                <h1>To live a life of personal freedom. <br>
+                        Creating the means to spread joy within my town.<br>
+                        Enjoying my family, my business, and my time on this beautiful earth.</h1>
+              </div>
+                </section>
+              <div class= "wrapper">
+                <section class="index-links">
+                      <a href = "cases.html">
+                        <div class= "index-boxlink-square">
+                              <h3> Cases </h3>
+                        </div>
+                      </a>
+                      <a href = "#">
+                          <div class= "index-boxlink-rectangle">
+                                <h3> Youtube Channel </h3>
+                          </div>
+                      </a>
+                  <a href = "#">
+                        <div class= "index-boxlink-square">
+                              <h3> Books </h3>
+                        </div>
+                      </a>
+                  <a href = "#">
+                          <div class= "index-boxlink-rectangle">
+                                  <h3> Podcast </h3>
+                          </div>
+                      </a>
+                  <a href = "https://drive.google.com/file/d/1qCxdugfMMeyH8_jALVC5n4w9M9mBjuGT/view?usp=sharing">
+                      <div class= "index-boxlink-square">
+                              <h3> Resumé </h3>
+                        </div>
+                    </a>
+                  <a href = "contact.html">
+                        <div class= "index-boxlink-square">
+                              <h3> Contact </h3>
+                        </div>
+                    </a>
+                    </section>
+              </div>
             </main>
 
+          <div class= "wrapper">
             <footer>
-              <!-- Use this area to add the footer content of the webpage -->
-              <p> You can reach me by <a href=mailto:ddealva@students.solano.edu> <strong> email </strong></a> at any time</p>
-              <p> &copy; Copyright 2021 . All rights reserved <p>
+              <ul class="footer-links-main">
+                <li> <a href= "index.html">Home</a></li>
+                <li> <a href= "mailto:mailto:ddealva@students.solano.edu">Email</a></li>
+                <li> <a href= "#">Porfolio</a></li>
+                <li> <a href= "Awards.html">About Me</a></li>
+                <li> <a href= "contact.html">Contact</a></li>
+              </ul>
+              <ul class = "footer-links-cases">
+                <li> <p>Latest Cases<p></li>
+                <li> <a href= "https://www.zillow.com/homedetails/3720-Fairlane-Dr-Gastonia-NC-28056/5877631_zpid/">3720 Fairlane Dr</a></li>
+                <li> <a href= "https://www.zillow.com/homedetails/321-Dexter-Pl-33-Monroe-NC-28110/2077071226_zpid/"> 321 Dexter Pl #33</a></li>
+                <li> <a href= "https://www.zillow.com/homedetails/2741-Shamrock-Dr-Charlotte-NC-28205/6193553_zpid/">2741 Shamrock Dr</a></li>
+                <li> <a href= "https://www.zillow.com/homedetails/292-Canonero-Pl-Indian-Land-SC-29707/72676696_zpid/">292 Canonero Pl</a></li>
+              </ul>
+              <div class = "footer-copy">
+              <p> &copy; Copyright 2021 . All rights reserved </p>
+            </div>
+              <div class = "footer-sm">
+                <a href= "#">
+                    <img src="images/icon-instagram.png" alt = "instagram icon">
+                </a>
+                <a href= "#">
+                    <img src="images/icon-twitter.png" alt = "twitter icon">
+                  </a>
+                  <a href= "#">
+                    <img src="images/icon-youtube.jpg" alt = "Youtube icon">
+                </a>
+              </div>
             </footer>
-</body>
-
-</html>
+      </div>
+      </body>
+    </html>

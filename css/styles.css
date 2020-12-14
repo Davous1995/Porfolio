@@ -99,275 +99,823 @@
                   max-width: 100%;
                   display: block;
       }
+      /*My Code*/
+      /*font-family: 'Poppins', sans-serif;*/
 /*styles rule for body and img*/
-body {
-            background-color: #5F9EA0;
-          }
+/*Body*/
 
-          /*style rules for mobile viewport*/
-          header {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            background-image: radial-gradient(#fff,#00f7f2);
-            height: 190px;
-          }
-
-          header img {
-                margin: 5px  auto 0;
-                width: 18%;
-          }
-
-
-          /*style rules for nav area*/
-          nav {
-                padding: 1%;
-                margin-bottom: 1%;
-
-          }
-
-          nav ul {
-              list-style-type: none;
-              text-align: center;
-
-          }
-          nav li{
-              font-size: .9em;
-              border-top: 1px solid #fff;
-              font-family: 'Roboto Condensed', sans-serif;
-          }
-
-          nav li:first-child{
-            border-top: none;
-          }
-
-          nav li a{
-            display: block;
-            color: #fff;
-            padding: 0.5em 1em;
-            text-decoration: none;
-          }
-
-          /*Show mobile class, hide desktop class*/
-
-          .mobile {
-            display: block;
-          }
-
-          .tablet-desktop {
-            display: none;
-          }
-
-#mission p{
-  clear: right;
-  text-align: center;
-  font-size: 1.35em;
-
+* {
+  text-decoration: none;
 }
 
-
-/* style rules for main */
-#introduction img{
-            border-radius: 6px;
-            float:right;
-            width: 30%
-
-}
-main {
-  clear: right;
-  background-color: #ADD8E6;
-  padding: 2%;
-  font-size: 1.25em;
-  font: #000;
-  font-family: 'Ubuntu', sans-serif;
+header #porfolio-logo{
+  display: none;
 }
 
-#introduction p{
-    word-wrap: left;
+header .header-brand {
+  display: none;
+}
+header nav .large-screen-nav{
+  display: none;
+}
+/*styles for Hamburger menu*/
+.mobile-nav{
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 155px;
 }
 
-
-
-.action {
-            font-size: 1.35em;
-            color: #666600;
-            font-weight: bold;
-}
-/* Style rules for homr page attributes */
-.home_image {
-  width: 20%;
-  float: left;
-  margin: 0 2%;
-  border: 4px solid #000;
-
-}
-
-#intro {
-              clear: left;
-              float: right;
-              font-family:   georgia, times, sans-serif;
-}
-
-#intro h3 {
-                  font-weight: bold;
-                  font-size: 1.5em;
-          }
-
-
-
-#hobbies {
-                clear: right;
-                  border-top: 1px solid #000;
-                  border-bottom: 1px solid #000;
-                  padding: 1% 2%;
-}
-
-
-#hobbies ul{
-                      font-weight: bold;
-                      list-style-type: none;
-}
-
-#hobbies li{
-                      padding: 0.5% 3% 2% 0;
-
-}
-
-
-/*style rules for external links and contact info*/
-.external_link {
-                        color: #00e6a3;
-                        font-weight: bold;
-                        text-decoration: none;
-}
-
-#contact {
-                text-align: center;
-}
-
-#contact a {
-                  color: #666600;
-                  text-decoration: none;
-}
-.map {
-            border: 8px solid #000;
-}
-
-#sport_list img{
-              float: left;
-              width: 3%;
-              height: 3%;
-
-}
-
-#sports_list dt{
-                      font-weight: bold;
-}
-
-#sports_list dd{
-                      padding: 0.5% 5% 2% 0;
-                      margin-left: 550px
-}
-/*style rules for footer*/
-footer p {
-              font-size: 0.75em;
-              text-align: center;
-              color: #fff;
-              padding: 0 1em;
-}
-
-footer p a{
-                color: #fff;
-                text-decoration: none;
-}
-
-#container{
-  width: 80%;
-  margin: 0 auto;
-}
-.map {
-            border: 8px solid #000;
-}
-/* Media Query for Tablet Viewport */
-@media screen and (min-width: 488px), print {
-  /*tablet viewport: display set up */
-  .tablet-desktop {
+.mobile-nav a{
     display: block;
-  }
-  header {
-    position: static;
+    font-family: 'Nerko One', cursive;
+    color: #111;
+    text-align: center;
+    font-size: 2em;
+    text-decoration:none;
+    padding: 3%;
+
+}
+
+.mobile-nav a.menu-icon {
+      display: block;
+      position:absolute;
+      right: 0;
+      top:0;
+      color:#111;
+
+}
+
+#menu-links {
+  display: none;
+}
+header .header-cases{
+  display: none;
+}
+
+
+/*Tablet viewport*/
+@media only screen and (min-width: 700px) {
+  header #porfolio-logo {
+    background-color: #fff;
+    width: 100%;
+    height: 155px;
   }
 
-  header img{
-    width: 50%;
-  }
-
-  header h1{
+.mobile-nav {
     display: none;
   }
-
-    /* Tablet Viewport: Style rules for nav area */
-    nav li {
-        display: inline-block;
-        margin: 0.5%;
-    }
-
-    nav li a {
-        padding: 0.1em 1em;
-    }
-    #hobbies dt{
-      
-    }
-
-
-}
-
-/* Media Query for Desktop Viewport */
-@media screen and (min-width: 769px), print {
-    /* Desktop Viewport: Style rules for header */
-header{
-    width: 25%;
-    float: left;
-}
-    /* Desktop Viewport: Style rules for nav */
-    nav ul{
-      text-align: right;
-    }
-    nav li {
-        border-radius: 0;
-    }
-
-    nav li a {
-        display: inline-block;
-        padding: 0.7em;
-    }
-    nav li a:hover {
-      color: #4424d6;
-      background-color: #e5e0fa;
-    }
-
-    /* Desktop Viewport: Style rules for the main content */
-    main {
-        border-style: none;
-        margin-bottom: 1em 0;
-        overflow: auto;
-    }
-    .col-content {
-      width: 30%;
-      float: left;
-      padding: 1.5%;
-    }
-
-    /* Desktop Viewport: Style rule for footer */
-    footer {
-        clear: left;
-    }
-
-}
-
-/*Media Query for Large Desktop Viewport.*/
-@media screen and (min-width: 1441px){
-  #container {
-    width: 1440px;
-    margin: 0px auto;
+header  .large-screen-nav {
+    display: block;
   }
+  header .header-brand {
+    display: block;
+    font-family: 'Nerko One', cursive;
+    font-size: 32px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  header nav ul{
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0  12px;
+  }
+  header nav ul li a{
+    font-family: 'Nerko One', cursive;
+    font-size: 28px;
+    color: #111;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  header {
+    height: 100px
+  }
+
+  header .header-brand {
+    margin: 31px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+  }
+  header nav ul{
+      margin: 20px 0px 0px 20px;
+      float: left;
+  }
+
+  header nav ul li a{
+    line-height: 60px;
+  }
+
+  header nav ul li  :hover{
+        background-color: #111;
+        color: #fff;
+        border-radius: 5px 5px 15px 15px;
+  }
+
+  header .header-cases{
+    display: block;
+    font-family: 'Nerko One', cursive;
+    font-size: 28px;
+    color: #111;
+    text-transform: uppercase;
+    line-height: 38px;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+}
+
+/*INDEX*/
+
+
+.index-banner {
+  width: 100%;
+  height: calc(60vh - 155px);
+  background-image: url('C:/Users/davou/Desktop/School/Creating Web pages/Porfolio/Porfolio/images/starry_sky.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.index-banner h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+    line-height: 65px;
+  text-shadow: 2px 2px 8px #111;
+  color: #fff;
+  text-align: center;
+}
+
+.index-banner h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 55px;
+  text-shadow: 2px 2px 8px #111;
+  color: #fff;
+  text-align: center;
+}
+
+.index-links div{
+  margin: 20px 20px 0;
+  width: calc(100% - 40px);
+  height: 100px;
+  background-color: #f2f2f2;
+
+}
+
+.index-links div h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 1100;
+  line-height: 100px;
+  text-transform: bold;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+
+}
+@media only screen and (min-width: 700px) {
+  .wapper{
+    width: 700px;
+    margin: 0 auto;
+  }
+@media only screen and (min-width: 1000px) {
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+   .index-banner {
+      height: 450px;
+    }
+.index-banner h1 {
+  display: block;
+  width: 700px;
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0 auto;
+}
+
+.index-links {
+  padding-bottom: 20px;
+  overflow: hidden;
+
+}
+.index-links div{
+  margin: 15px 10px 0;
+  height: 230px;
+  background-color: #f2f2f2;
+  float: left;
+
+}
+
+.index-boxlink-square:hover {
+  box-shadow: 2px 2px 4px #111, -2px -2px 4px #111;
+}
+
+.index-boxlink-rectangle:hover {
+  box-shadow: 2px 2px 4px #111, -2px -2px 4px #111;
+}
+
+.index-boxlink-square{
+    width: calc(25% - 20px) !important;
+}
+.index-boxlink-rectangle{
+    width: calc(50% - 20px) !important;
+}
+.index-links div h3{
+  margin: auto;
+  padding-top: 85px;
+  padding right: 30px;
+  line-height:50px;
+  text-align: center;
+}
+}
+
+/*CONTACT*/
+/*.wrapper{
+  display: block;
+}*/
+
+.contact-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px auto;
+
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-openmap {
+  margin: 20px 20px 0;
+  width: calc(100% - 40px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.contact-openmap h3{
+  font-size: 35px;
+  font-weight: 1100;
+  line-height: 100px;
+  text-transform: bold;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+.contact-openmap  h3 a{
+  text-decoration: none;
+}
+
+.contact-map{
+  display: none;
+}
+
+.contact-input{
+  width: 100%;
+  height: 1120px;
+  background-color: #f2f2f2;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+/*  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1 fr ;*/
+    grid-template-areas:
+    "contact-input-title"
+    "fName"
+    "lName"
+    "email"
+    "PhoneNumber "
+    "Msg"
+    "submit";
+  }
+
+  .contact-input-title {
+    grid-area: contact-input-title;
+    align-self: center
+  }
+  .contact-input-title h2 {
+    font-size: 40px;
+    margin-left: 15%
+  }
+
+  .fName {
+    grid-area: fName ;
+
+  }
+
+  .fName label{
+        font-size: 40px;
+      line-height: 50px;
+       justify-self: start;
+  }
+  .fName input{
+    width: 75%;
+    height: 40px;
+    font-size: 38px;
+    margin-top: 4px;
+
+  }
+
+  .lName {
+    grid-area: lName;
+  }
+  .lName label{
+        font-size: 40px;
+      line-height: 50px;
+       justify-self: start;
+  }
+  .lName input{
+    width: 75%;
+    height: 40px;
+    font-size: 38px;
+    margin-top: 4px;
+
+  }
+
+  .email {
+      grid-area: email;
+  }
+
+  .email label{
+        font-size: 40px;
+      line-height: 50px;
+       justify-self: start;
+  }
+  .email input{
+    width: 75%;
+    height: 40px;
+    font-size: 38px;
+    justify-self: end;
+  }
+
+
+.PhoneNumber {
+    grid-area: PhoneNumber;
+}
+.PhoneNumber label{
+      font-size: 40px;
+    line-height: 50px;
+     justify-self: start;
+}
+.PhoneNumber input{
+  width: 65%;
+  height: 40px;
+  font-size: 38px;
+
+}
+
+.Msg {
+    grid-area: Msg;
+    margin: 20px 5% 0 ;
+}
+.Msg label{
+      font-size: 35px;
+    line-height: 50px;
+     justify-self: start;
+}
+.Msg textarea{
+  width: 90%;
+  height: 120px;
+  font-size: 38px;
+
+}
+
+.submit {
+    grid-area: submit;
+    justify-self: center;
+    align-self: center;
+}
+
+.submit input {
+  margin: 20px 20px 0;
+  width: calc(100% - 40px);
+  height: 100px;
+  background-color: #a7a5a5;
+   font-size: 60px;
+   color: #fff;
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+    "contact-info contact-input"
+    " contact-map contact-input";
+
+  }
+
+  .contact-info {
+    grid-area: contact-info;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .contact-map{
+    display: grid;
+    grid-area: contact-map;
+    border: 3px solid #111;
+    margin-right: 15px
+  }
+
+
+
+  .contact-input{
+    width:auto;
+    height: auto;
+    grid-area: contact-input;
+    display: grid;
+    margin: 0;
+  }
+
+  .contact-input-title {
+    grid-area: contact-input-title;
+    font-size: 30px;
+    align-self: center;
+  }
+
+  .fName {
+    grid-area: fName ;
+  }
+
+  .lName {
+    grid-area: lName;
+  }
+
+  .email {
+      grid-area: email;
+  }
+
+.PhoneNumber {
+    grid-area: PhoneNumber;
+}
+
+.Msg {
+    grid-area: Msg;
+}
+
+.submit {
+    grid-area: submit;
+    justify-self: center;
+}
+.submit :hover {
+  background-color: #fff;
+   color: #a7a5a5;
+}
+
+  .contact-form label{
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0;
+  }
+
+  .contact-form input{
+      height: 35px;
+      font-size: 30px;
+  }
+  .Msg input {
+      height: 32px ;
+  }
+
+  .contact-openmap {
+  display: none;
+  }
+
+}
+/*References*/
+
+.ref-header {
+  margin: 35px 30% 20px;
+}
+.ref-header h1{
+  padding-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+table{
+  width: 100%;
+
+}
+table th{
+  text-align: left;
+  font-size: 30px
+}
+
+table, th, td {
+
+  border: 1px solid #111;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+
+}
+
+ td {
+  font-size: 24px;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.ref-article {
+
+  margin: 20px 30px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.ref-article h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+.ref-gradient {
+  display: block;
+  background-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+  padding: 5px 5px;
+  margin-top: 10px;
+}
+.ref-article {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.ref-article p{
+  font-size: 1.2em;
+}
+}
+
+/*  ABOUT */
+
+.about-header {
+  margin: 0 20% 20px;
+}
+.about-header h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-paragraphOne {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+
+}
+
+.about-paragraphTwo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+
+}
+.about-image {
+  display: block;
+  width: 100%;
+}
+
+.about-list {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "paragraph image"
+    "paragraph2 paragraph2";
+
+  }
+  .about-paragraphOne{
+    grid-area: paragraph;
+  }
+
+  .about-paragraphOne p{
+    font-size: 26px;
+  }
+  .about-paragraphTwo{
+    grid-area: paragraph2;
+    justify-self: start;
+  }
+  .about-paragraphTwo p{
+    font-size: 26px;
+  }
+
+  .about-image{
+    grid-area: image;
+  }
+
+  .about-list {
+    display: block;
+    margin: 0 25% 50px 45% ;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .about-list h3 {
+    font-size: 25px;
+  }
+  .about-list ul li {
+    font-size: 18px;
+  }
+}
+
+
+/*RDP*/
+
+.RDP-intro {
+  font-family: 'Poppins', sans-serif;
+}
+.RDP-intro h1{
+  margin:auto;
+  padding: 10% 0 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+.RDP-intro p{
+  display: block;
+  font-size:  15px;
+  padding-bottom: 25px;
+  line-height: 25px;
+
+}
+
+.RDP-audio{
+  width: 100%;
+  margin: 0 40%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+  width: calc(100%- 100px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+}
+
+footer  ul{
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer  ul li{
+  display: block;
+  list-style: none;
+}
+
+footer  ul li a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  color: #fff;
+  line-height: 40px;
+}
+
+footer p{
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+.footer-links-cases {
+  display: none;
+}
+
+.footer-sm{
+  width: 60px;
+  float: right;
+}
+
+.footer-sm img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-copy p{
+  font-size: 6px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+  }
+
+  .footer-links-cases {
+    display: block;
+  }
+  footer  ul{
+    padding-right: 30px
+  }
+  footer  ul li p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  .footer-copy p{
+    font-size: 8px;
+  }
+
+.footer-links-cases  li a{
+      font-size: 15px;
+}
+
+}
