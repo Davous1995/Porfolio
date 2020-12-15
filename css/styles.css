@@ -385,7 +385,7 @@ header  .large-screen-nav {
 
 .contact-info a:hover{
   transform: scale(1.5, 1.5);
-  -webkit-transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.25);
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -887,6 +887,10 @@ footer p{
 .footer-sm img{
   width: 100%;
   margin-bottom: 10px;
+}
+
+.LinkedIn img {
+  border-radius: 100px;
 }
 
 .footer-copy p{
